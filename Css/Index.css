@@ -1,0 +1,66 @@
+﻿#Search{
+    padding-left: 50%;
+}
+#First {
+    padding-left: 15%;
+}
+#fname {
+    margin-left: 15%;
+}
+#Last {
+    padding-left: 65%;
+    position: relative;
+    margin-top: -80px;
+
+}
+#lname {
+    margin-left: 65%;
+    
+}
+#enter {
+    margin-left: 40%;
+}
+#reset{
+    margin-left: 10%;
+}
+#PhoneNumber{
+
+}
+#FaxNumber {
+   margin-left: 60%;
+   margin-top: -45px;
+}
+#phoneform{
+
+}
+#Phone {
+    margin-left: 10%;
+}
+#Ext {
+    margin-left: 10%;
+}
+#enter2 {
+    margin-left: 10%;
+}
+#reset2 {
+    margin-left: 1%;
+}
+#Fax1{
+    margin-right: 15%;
+    margin-top: -80px;
+    float:right;
+}
+#enter3 {
+    margin-right: 30%;
+    margin-top: -80px;
+    float:right;
+}
+
+#reset3 {
+    margin-right: 20%;
+    float: right;
+    margin-top: -80px;
+}
+#department {
+    margin-left: 10%;
+}

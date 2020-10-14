@@ -1,0 +1,18 @@
+﻿#Fax{
+    margin-left: 50%;
+}
+#department {
+    margin-top: 5%;
+    margin-left: 35%;
+    border: solid;
+    
+}
+#faxnumber {
+    margin-left: 50%;
+    margin-top: -50px;
+    border: solid;
+    
+}
+#DepTab {
+    width: 100%;
+}
