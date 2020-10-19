@@ -4,14 +4,22 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Configuration;
+using System.Data.SqlClient;
+using MySql.Data.MySqlClient;
+using System.Data;
 
 namespace PhoneApp
 {
     public partial class User : System.Web.UI.Page
     {
+        private object cmd;
+
         protected void Page_Load(object sender, EventArgs e)
         {
 
         }
+
     }
 }
+

@@ -1,8 +1,8 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="login.aspx.cs" Inherits="PhoneApp.login" %>
+﻿
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="login.aspx.cs" Inherits="PhoneApp.login" %>
 
 <!DOCTYPE html>
 <link rel="stylesheet" href="Css/login.css"/>
-<html xmlns="http://www.w3.org/1999/xhtml">
 <script src="login.js"></script>
 <head runat="server">
     <title></title>

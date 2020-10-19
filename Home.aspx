@@ -12,7 +12,7 @@
 
 <body>
     <form id="form1" runat="server">   
-    
+
     <div >
              <h2 id ="Search"> Search </h2>
     </div>
@@ -26,9 +26,11 @@
         <input type="text"  id="fname" name="fname"><br><br>
         
         <h3 id ="Last"> Last Name </h3>
+        <asp:Button ID="Enter1" runat="server" Text="Enter" />
+        <input type="reset" id="reset3" value=" Reset" />
+
                  <input type="text" id ="lname"  name="lname"><br><br>
-                 <input type="submit" id ="enter" value="Enter">
-                 <input type="reset" id="reset" value="Reset" />
+              
     </div>
     <hr />
 </div>
@@ -42,10 +44,10 @@
     <div id="phoneform">
         <input type="tel" id="Phone" name="phone" placeholder="123-456-789" ><br><br><!-- pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required!-->
         <input type="tel" id="Ext" name="Ext" placeholder="1234"><br><br><!-- pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required!-->
-        <input type="submit" id="enter2" value="Enter" />
+        <asp:Button ID="Enter2" runat="server" Text="Enter" />
         <input type="reset" id="reset2" value=" Reset" />
         <input type="tel"id="Fax1" name="Fax" placeholder="123-456-789"><br><br /><!-- pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required!-->
-        <input type="submit" id ="enter3"  value="Enter" />
+        <asp:Button ID="Enter3" runat="server" Text="Enter" />
         <input type="reset" id="reset3" value=" Reset" />
     </div>
     <!-- need fax number input XXX-XXX-XXXX-->
