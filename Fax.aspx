@@ -8,27 +8,32 @@
 </head>
 <body>
     <form id="form1" runat="server">
+        
+<asp:GridView ID="FaxSearch" runat="server" HeaderStyle-BackColor="Blue" AutoGenerateColumns="false"
+          AllowPaging="true" OnPageIndexChanging="FaxSearch_PageIndexChanging" AlternatingRowStyle-BackColor="WhiteSmoke">   
+           
+<%--#0F52BA--%><%--#e5e4e2--%>
+<Columns>
+  
+   <asp:BoundField DataField="FaxNumber" HeaderText="Fax Number" SortExpression="Fax Number"
+        ItemStyle-Width="150px" /> 
+   <asp:BoundField DataField="PhoneNumber" HeaderText="Phone Number" SortExpression="Phone Number"
+        ItemStyle-Width="150px" />
+   <asp:BoundField DataField="ExtensionNumber" HeaderText="Extension Number" SortExpression="Extension Number"
+        ItemStyle-Width="150px" />
+    <asp:BoundField DataField="DepartmentName" HeaderText="Department" SortExpression="Department"
+        ItemStyle-Width="150px" />
+   <asp:BoundField DataField="EmailAddress" HeaderText="Email" SortExpression="Email"
+        ItemStyle-Width="150px" />
+</Columns>
+</asp:GridView>
         <div>
             <div class="text-center">
                    <h2 id="Fax">Fax</h2>
             </div>
-            <div >
-                    <table id ="DepTab">
-                         <tr>
-                             <th id="department">Department</th>
-                             <th id="faxnumber">Fax Number</th>
-                      
-                         </tr>
-                    </table>
-                
-        </div>
+          
             </div>
-             <%--<asp:AccessDataSource ID="AccessDataSource2" runat="server" 
-            DataFile="~/App_Data/Phonebook.accdb"
-                 SelectCommand="SELECT Department Name, FaxNumber FROM department">
-        </asp:AccessDataSource>
-        <asp:GridView ID="GridView3" runat="server" DataSourceID="AccessDataSource2">
-        </asp:GridView>--%>
+
     </form>
 </body>
 </html>

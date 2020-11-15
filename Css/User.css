@@ -1,43 +1,30 @@
 ﻿#UsrTitle{
     text-align:center;
 }
-#PhoneT{
-    width:100%;
-    margin-top: 30px;
-}
-#FirstN {
-    margin-left: 1%;
-    margin-top: 10px;
-    border: solid;
 
+.FixedHeader {
+    position: absolute;
+    font-weight: bold;
 }
-#LastN {
-    margin-left: 15%;
-    margin-top: -41px;
-    border: solid;
+ 
+#FirstN{
+    margin-left: 80px;
 }
-#department {
-    margin-left: 28%;
-    margin-top: -41px;
-    border: solid;
+#LastN{
+    margin-left: 80px;
 }
-#email {
-    margin-left: 43%;
-    margin-top: -41px;
-    border: solid;
+#Deparment{
+    margin-left: 80px;
 }
-#Phonenumber {
-    margin-left: 60%;
-    margin-top: -41px;
-    border: solid;
+#email{
+    margin-left: 80px;
 }
-#extensionnumber {
-    margin-left: 80%;
-    margin-top: -41px;
-    border: solid;
+#Phone{
+margin-left: 80px;
 }
-#faxnumber {
-    margin-left: 90%;
-    margin-top: -41px;
-    border: solid;
+#Ext{
+    margin-left: 80px;
+}
+#Fax{
+    margin-left: 80px;
 }

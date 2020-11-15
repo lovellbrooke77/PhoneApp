@@ -1,26 +1,27 @@
 ﻿#Search{
-    padding-left: 50%;
+    padding-left: 45%;
 }
 #First {
     padding-left: 15%;
 }
 #fname {
-    margin-left: 15%;
+    margin-left: 10%;
+    
 }
 #Last {
     padding-left: 65%;
-    position: relative;
+    
     margin-top: -80px;
 
 }
 #lname {
-    margin-left: 65%;
+    margin-left: 55%;
     
 }
-#enter {
+#Enter1 {
     margin-left: 40%;
 }
-#reset{
+#clear{
     margin-left: 10%;
 }
 #PhoneNumber{
@@ -42,7 +43,7 @@
 #enter2 {
     margin-left: 10%;
 }
-#reset2 {
+#clear2 {
     margin-left: 1%;
 }
 #Fax1{
@@ -56,10 +57,10 @@
     float:right;
 }
 
-#reset3 {
+#clear3 {
     margin-right: 20%;
     float: right;
-    margin-top: -80px;
+    margin-top: 10px;
 }
 #department {
     margin-left: 10%;
