@@ -200,6 +200,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="JavaScript\Foundation.js" />
+    <Content Include="Css\LoginReg.css" />
+    <Content Include="Phonebook.aspx" />
     <Content Include="Phonebook.mdb" />
     <Content Include="Phonebook1.accdb" />
     <Content Include="Css\Department.css" />
@@ -213,9 +216,9 @@
     <Content Include="Register.aspx" />
     <Content Include="Department.aspx" />
     <Content Include="Fax.aspx" />
-    <Content Include="Home.js" />
+    <Content Include="JavaScript\Home.js" />
     <Content Include="login.aspx" />
-    <Content Include="loginReg.js" />
+    <Content Include="JavaScript\loginReg.js" />
     <Content Include="Phone.aspx" />
     <Content Include="User.aspx" />
     <Content Include="Web.config" />
@@ -227,6 +230,13 @@
     <Compile Include="db.cs" />
     <Compile Include="IsPost.cs" />
     <Compile Include="oleDbConnection.cs" />
+    <Compile Include="Phonebook.aspx.cs">
+      <DependentUpon>Phonebook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Phonebook.aspx.designer.cs">
+      <DependentUpon>Phonebook.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Register.aspx.cs">
       <DependentUpon>Register.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

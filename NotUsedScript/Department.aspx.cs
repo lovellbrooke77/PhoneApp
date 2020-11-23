@@ -26,6 +26,7 @@ namespace PhoneApp
                 BindData(Department_name);
             }
         }
+
         protected void BindData(string Department_name)
         {
             string sql;

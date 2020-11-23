@@ -1,26 +1,18 @@
-﻿/*Start Global Style*/
-* {
+﻿﻿ /*Start Global Style*/
+.pagecontainer {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
-
-body {
-    background: #e9ebee;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     font-family: sans-serif;
-}
-
-.container {
     width: 80%;
     margin: auto;
     padding: 20px;
-    height: 100%
+    height: 100%;
 }
-
 .login, .register {
     width: 50%
 }
@@ -40,16 +32,12 @@ body {
         font-size: 2.5em;
     }
 
-.username, .password{
+.logincredentials {
     width: 100%;
     padding: 10px;
     margin-bottom: 30px;
     border: none;
     background-color: #eeeeef;
-}
-
-.login span {
-    float: left
 }
 
 .login a {
@@ -110,6 +98,7 @@ body {
         .login ul li:last-child {
             margin-right: 0
         }
+
 .clearfix {
     width: 100%;
     margin-top: -10px;
@@ -122,23 +111,23 @@ body {
     transition: 0.3s all ease-in-out;
 }
 
-.clearfix:hover {
-    width: 99%;
-    font-size: 22px;
-    border-radius: 5px;
-}
+    .clearfix:hover {
+        width: 99%;
+        font-size: 22px;
+        border-radius: 5px;
+    }
 
 .login .copyright {
     display: inline-block;
     float: none;
-    margin-top:40%;
+    margin-top: 40%;
     margin-left: 120%;
 }
 /*Start Register Style*/
 .register {
     float: right;
-    background-image: linear-gradient(135deg, #0F52BA 5%, #0F52BA 95%);
-    height: 100%;
+    /*background-image: linear-gradient(135deg, #0F52BA 5%, #0F52BA 95%);*/
+    height: 83%;
     color: #fff;
     border-radius: 0 10px 10px 0;
     text-align: center;
@@ -156,19 +145,19 @@ body {
         margin-bottom: 30px;
     }
 
-    .registerbutton {
-        background-color: transparent;
-        border: 1px solid #FFF;
-        border-radius: 20px;
-        padding: 10px 20px;
-        color: #fff;
-        font-size: 20px;
-        text-transform: uppercase;
-        transition: 0.2s all ease-in-out;
-    }
+.registerbutton {
+    background-color: transparent;
+    border: 1px solid #FFF;
+    border-radius: 20px;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+    transition: 0.2s all ease-in-out;
+}
 
-        .registerbutton:hover {
-            color: #0F52BA;
-            background-color: #fff;
-            cursor: pointer;
-        }
+    .registerbutton:hover {
+        color: #0F52BA;
+        background-color: #fff;
+        cursor: pointer;
+    }

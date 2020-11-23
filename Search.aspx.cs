@@ -1,20 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
-using com.sun.xml.@internal.bind.v2.runtime.reflect.opt;
-using System.Configuration;
-using Google.Apis.Admin.Directory.directory_v1.Data;
-using System.Web.DynamicData;
 using System.Data.OleDb;
-using System.Web.UI.HtmlControls;
 namespace PhoneApp
 {
     public partial class Home : System.Web.UI.Page
@@ -39,33 +24,34 @@ namespace PhoneApp
         }
             protected void btnUser_Click(object sender, EventArgs e)
             {
-            string sql;
-            OleDbConnection con = new OleDbConnection();
-            // establish connection  
-            con.ConnectionString = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" + Server.MapPath("Phonebook.mdb");
-            con.Open(); // connection open  
-                        // sql query  
+            //string sql;
+            //OleDbConnection con = new OleDbConnection();
+            //// establish connection  
+            //con.ConnectionString = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" + Server.MapPath("Phonebook.mdb");
+            //con.Open(); // connection open  
+            //            // sql query  
             
-            sql = "select FirstName, LastName, StatusId from [user] where [FirstName]='" 
-                + fname.Text + "' and [LastName]='" + lname.Text + "'";
-            OleDbCommand cmd = new OleDbCommand(sql, con);
-            cmd.ExecuteScalar();// cast into integer and ExecuteScalar() get single value from database.   
-            OleDbDataReader reader;
-            reader = cmd.ExecuteReader();
+            //sql = "select FirstName, LastName, StatusId from [user] where [FirstName]='" 
+            //    + fname.Text + "' and [LastName]='" + lname.Text + "'";
+            //OleDbCommand cmd = new OleDbCommand(sql, con);
+            //cmd.ExecuteScalar();// cast into integer and ExecuteScalar() get single value from database.   
+            //OleDbDataReader reader;
+            //reader = cmd.ExecuteReader();
 
-            while (reader.Read())
-            {
-                if (reader.HasRows)
-                {
-                    Response.Redirect("~/User.aspx?f_name="+fname.Text+"&l_name="+lname.Text);
-                }
-                else
-                {
+            //while (reader.Read())
+            //{
+            //    if (reader.HasRows)
+            //    {
+                    //Response.Redirect("~/User.aspx?f_name="+fname.Text+"&l_name="+lname.Text);
+                    Response.Redirect("~/Phonebook.aspx?btn=user&f_name=" +  fname.Text + "&l_name=" + lname.Text);
+            //    }
+            //    else
+            //    {
 
-                    lblmessage1.Text = "First or Last Name not Found. Try again.";
-                    con.Close(); // connection close 
-                }
-            }
+            //        lblmessage1.Text = "First or Last Name not Found. Try again.";
+            //        con.Close(); // connection close 
+            //    }
+            //}
         }
         protected void PhoExtbtn_Click(object sender, EventArgs e)
         {
@@ -76,7 +62,11 @@ namespace PhoneApp
             con.Open(); // connection open  
                         // sql query  
 
-            sql = "select PhoneNumber, ExtensionNumber from [phonenumber]";
+            sql = "SELECT phonenumber.PhoneNumber, phonenumber.ExtensionNumber,user.FirstName, user.LastName," +
+                "department.DepartmentID, phonenumber.PhoneID, email.EmailID FROM [phonenumber],[user],[email],[department]" +
+                "WHERE [user].UserID = [phonenumber].UserID AND [user].UserID= [email].UserID AND [user].UserID = [department].UserID";
+
+                //"select PhoneNumber, ExtensionNumber from [phonenumber]";
             OleDbCommand cmd = new OleDbCommand(sql, con);
             cmd.ExecuteScalar();// cast into integer and ExecuteScalar() get single value from database.   
             OleDbDataReader reader;
@@ -92,7 +82,8 @@ namespace PhoneApp
                     E_name = ExtNumber.Text;
                     P_name = PhoneNum.Text;
 
-                    Response.Redirect("~/Phone.aspx?P_name=" + P_name+"& E_name = "+E_name);
+                    //Response.Redirect("~/Phone.aspx?P_name=" + P_name+"& E_name = "+E_name);
+                    Response.Redirect("~/Phonebook.aspx?btn=phone&P_name=" + P_name + "&E_name=" + E_name);
                 }
                 else
                 {
@@ -123,8 +114,9 @@ namespace PhoneApp
                     string F_name = string.Empty;
                     
                     F_name = FaxNum.Text;
-                    
-                    Response.Redirect("~/Fax.aspx?F_name=" + F_name);
+
+                    //Response.Redirect("~/Fax.aspx?F_name=" + F_name);
+                    Response.Redirect("~/Phonebook.aspx?btn=fax&F_name=" + F_name);
                 }
                 else
                 {
@@ -142,8 +134,9 @@ namespace PhoneApp
             con.Open(); // connection open  
                         // sql query  
 
-            sql = "select DepartmentName from [department]";
+             sql = "select DepartmentName from [department]";
             OleDbCommand cmd = new OleDbCommand(sql, con);
+               
             cmd.ExecuteScalar();// cast into integer and ExecuteScalar() get single value from database.   
             OleDbDataReader reader;
             reader = cmd.ExecuteReader();
@@ -156,7 +149,8 @@ namespace PhoneApp
 
                     Department_name = DD_Department.SelectedValue;
 
-                    Response.Redirect("~/Department.aspx?Department_name=" +Department_name);
+                    //Response.Redirect("~/Department.aspx?Department_name=" +Department_name); 
+                    Response.Redirect("~/Phonebook.aspx?btn=department&Department_name=" + Department_name);
                 }
                 else
                 {
