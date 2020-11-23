@@ -214,13 +214,13 @@
     <Content Include="Css\Registration.css" />
     <Content Include="Css\User.css" />
     <Content Include="Register.aspx" />
-    <Content Include="Department.aspx" />
-    <Content Include="Fax.aspx" />
+    <Content Include="NotUsedScript\Department.aspx" />
+    <Content Include="NotUsedScript\Fax.aspx" />
     <Content Include="JavaScript\Home.js" />
     <Content Include="login.aspx" />
     <Content Include="JavaScript\loginReg.js" />
     <Content Include="Phone.aspx" />
-    <Content Include="User.aspx" />
+    <Content Include="NotUsedScript\User.aspx" />
     <Content Include="Web.config" />
     <Content Include="Search.aspx" />
   </ItemGroup>
@@ -244,18 +244,18 @@
     <Compile Include="Register.aspx.designer.cs">
       <DependentUpon>Register.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Department.aspx.cs">
+    <Compile Include="NotUsedScript\Department.aspx.cs">
       <DependentUpon>Department.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Department.aspx.designer.cs">
+    <Compile Include="NotUsedScript\Department.aspx.designer.cs">
       <DependentUpon>Department.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Fax.aspx.cs">
+    <Compile Include="NotUsedScript\Fax.aspx.cs">
       <DependentUpon>Fax.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Fax.aspx.designer.cs">
+    <Compile Include="NotUsedScript\Fax.aspx.designer.cs">
       <DependentUpon>Fax.aspx</DependentUpon>
     </Compile>
     <Compile Include="login.aspx.cs">
@@ -283,11 +283,11 @@
     <Compile Include="Request\Form.cs" />
     <Compile Include="Response\Redirect.cs" />
     <Compile Include="Select.cs" />
-    <Compile Include="User.aspx.cs">
+    <Compile Include="NotUsedScript\User.aspx.cs">
       <DependentUpon>User.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="User.aspx.designer.cs">
+    <Compile Include="NotUsedScript\User.aspx.designer.cs">
       <DependentUpon>User.aspx</DependentUpon>
     </Compile>
     <Compile Include="Validation\RequireField.cs" />
