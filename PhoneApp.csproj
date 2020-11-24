@@ -200,7 +200,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="JavaScript\Foundation.js" />
+    <Content Include="Foundation.js" />
     <Content Include="Css\LoginReg.css" />
     <Content Include="Phonebook.aspx" />
     <Content Include="Phonebook.mdb" />
@@ -216,9 +216,9 @@
     <Content Include="Register.aspx" />
     <Content Include="NotUsedScript\Department.aspx" />
     <Content Include="NotUsedScript\Fax.aspx" />
-    <Content Include="JavaScript\Home.js" />
+    <Content Include="Home.js" />
     <Content Include="login.aspx" />
-    <Content Include="JavaScript\loginReg.js" />
+    <Content Include="NotUsedScript\loginReg.js" />
     <Content Include="Phone.aspx" />
     <Content Include="NotUsedScript\User.aspx" />
     <Content Include="Web.config" />

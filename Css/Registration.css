@@ -1,8 +1,6 @@
 ﻿/*Start register Style*/
 .pagecontainer {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,14 +11,12 @@
     padding: 20px;
     height: 100%;
 }﻿ /*Start Global Style*/
-
-.login, .register {
-    width: 50%
-}
+ .login, .register{
+     width:50%;
+ }
 
 /*Start register Style*/
 .register {
-    float: right;
     background-color: #fafafa;
     height: 100%;
     border-radius: 10px 0 0 10px;
@@ -125,7 +121,7 @@
 
 /*Start login Style*/
 .login {
-    float: right;
+    float: left;
     background-image: linear-gradient(135deg, #0F52BA 5%, #0F52BA 95%);
     height: 83%;
     color: #fff;

@@ -4,13 +4,14 @@
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
-    <script src="loginReg.js"></script>
+
+    <script src="Foundation.js"></script>
 <head runat="server">
     <title></title>
 </head>
-<body>
+<body onload="ChangeColor()">
     <form id="form1" runat="server">
-  <div class="container">
+ <div class="pageContainer" id="pageContainer">
       <div class="register"> <!-- Changed !-->
         
               <h1>Register</h1>
@@ -31,12 +32,13 @@
               <i class="fas fa-user-plus fa-5x"></i>
               <h2>Hello!</h2>
               <p>If you have registered click below.</p>
-              <div id ="btnlogin">
-             <asp:Button class="loginbutton"
+       
+             <div id ="btnlogin">
+                  <asp:Button class="loginbutton"
                  PostBackUrl="~/login.aspx" runat="server" 
                  placeholder ="Login" text="Login" />
-          </div>
-          </div>
+             </div>
+         </div>
       </div>  
     </div>
 </form>

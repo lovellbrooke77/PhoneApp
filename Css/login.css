@@ -1,8 +1,6 @@
-﻿﻿ /*Start Global Style*/
-.pagecontainer {
+﻿ /*Start Global Style*/
+.pageContainer {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,9 +17,8 @@
 
 /*Start Login Style*/
 .login {
-    float: left;
     background-color: #fafafa;
-    height: 100%;
+    height: 88%;
     border-radius: 10px 0 0 10px;
     text-align: center;
     padding-top: 100px;
@@ -116,25 +113,17 @@
         font-size: 22px;
         border-radius: 5px;
     }
-
-.login .copyright {
-    display: inline-block;
-    float: none;
-    margin-top: 40%;
-    margin-left: 120%;
-}
 /*Start Register Style*/
-.register {
-    float: right;
-    /*background-image: linear-gradient(135deg, #0F52BA 5%, #0F52BA 95%);*/
-    height: 83%;
+.registerContainer {
+    float: left;
+    height: 67%;
     color: #fff;
     border-radius: 0 10px 10px 0;
     text-align: center;
     padding: 100px 0;
 }
 
-    .register h2 {
+    .register h2{
         margin: 30px 0;
         font-size: 50px;
         letter-spacing: 3px

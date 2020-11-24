@@ -1,7 +1,7 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Search.aspx.cs" Inherits="PhoneApp.Home" %>
 
 <link rel="stylesheet" href="Css/Index.css"/>
-<script src="loginReg.js"></script>
+<script src="Foundation.js"></script>
 <html xmlns="http://www.w3.org/1999/xhtml"> 
 <head runat="server">
     <title></title>
@@ -27,7 +27,7 @@
         <asp:TextBox runat="server" type="text" id ="lname"  name="lname" />
         <asp:Button ID="Enter1"  Text="Enter" OnClick="btnUser_Click" runat="server" />
 
-        <asp:Button  id="clear1" runat="server" Text="Clear" OnClientClick="Cancel()"/>
+        <asp:Button  id="clear1" runat="server" Text="Clear" OnClientClick="cancel()"/>
 
          <asp:Label runat="server" id="lblmessage1" /> 
 </div>
@@ -54,7 +54,7 @@
 
     <asp:Button ID="Enter2" runat="server" OnClick="PhoExtbtn_Click" Text="Enter"/>
        
-        <asp:Button runat="server" type="button" id="clear2" CssClass="clear2" OnClientClick="cancel();" Text="Clear" /> 
+        <asp:Button runat="server" type="button" id="clear2" CssClass="clear2" OnClientClick="cancel()" Text="Clear" /> 
                       
     <asp:Label runat="server" id="lblmessage2" > </asp:Label>
     
@@ -64,7 +64,7 @@
       
         <asp:Button ID="Enter3" runat="server" OnClick="Faxbtn_Click" Text="Enter" />
 
-        <asp:Button runat="server" type="button" ID="clear3" CssClass="clear3" OnClientClick="cancel();" Text="Clear"/> 
+        <asp:Button runat="server" type="button" ID="clear3" CssClass="clear3" OnClientClick="cancel()" Text="Clear"/> 
                      
     <asp:Label runat="server" id="lblmessage3" > </asp:Label>
         <hr />
