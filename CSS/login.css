@@ -1,0 +1,146 @@
+﻿ /*Start Global Style*/
+.pageContainer {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+}
+.login, .register{
+    width:50%;
+}
+/*Start Login Style*/
+.login {
+    background-color: #fafafa;
+    border-radius: 10px 0 0 10px;
+    text-align: center;
+    height:100%;
+    padding-top: 0px;
+}
+    .login h1 {
+        margin-bottom: 40px;
+        font-size: 2.5em;
+    }
+.logincredentials {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 30px;
+    border: none;
+    background-color: #eeeeef;
+}
+
+.login a {
+    float: right;
+    text-decoration: none;
+    color: #000;
+    transition: 0.3s all ease-in-out;
+}
+
+    .login a:hover {
+        color: #0F52BA;
+        font-weight: bold;
+    }
+
+.loginbutton {
+    width: 100%;
+    margin: 30px 0;
+    padding: 10px;
+    border: none;
+    background-color: #0F52BA;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s all ease-in-out;
+}
+
+    .loginbutton:hover {
+        width: 99%;
+        font-size: 22px;
+        border-radius: 5px;
+    }
+
+.login hr {
+    width: 30%;
+    display: inline-block
+}
+
+.login p {
+    display: inline-block;
+    margin: 0px 10px 30px;
+}
+
+.login ul {
+    list-style: none;
+    margin-bottom: 40px;
+}
+
+    .login ul li {
+        display: inline-block;
+        margin-right: 30px;
+        cursor: pointer;
+    }
+
+        .login ul li:hover {
+            opacity: 0.6
+        }
+
+        .login ul li:last-child {
+            margin-right: 0
+        }
+
+.clearfix {
+    width: 100%;
+    margin-top: -10px;
+    padding: 10px;
+    border: none;
+    background-color: #0F52BA;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s all ease-in-out;
+}
+
+    .clearfix:hover {
+        width: 99%;
+        font-size: 22px;
+        border-radius: 5px;
+    }
+/*Start Register Style*/
+.registerContainer {
+    float: left;
+    height: 73%;
+    color: #fff;
+    border-radius: 0 10px 10px 0;
+    text-align: center;
+    padding: 100px 0;
+}
+
+    .register h2{
+        margin: 30px 0;
+        font-size: 50px;
+        letter-spacing: 3px
+    }
+
+    .register p {
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+
+.registerbutton {
+    background-color: transparent;
+    border: 1px solid #FFF;
+    border-radius: 20px;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+    transition: 0.2s all ease-in-out;
+}
+
+    .registerbutton:hover {
+        color: #0F52BA;
+        background-color: #fff;
+        cursor: pointer;
+    }

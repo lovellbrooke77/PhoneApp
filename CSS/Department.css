@@ -1,0 +1,36 @@
+﻿#DepartmentH {
+    text-align: center;
+}
+#DepartmentT{
+    width:100%;
+}
+#department {
+    margin-left:0%;
+    margin-top:5%;
+    border:solid;
+    width: 20%;
+}
+#email {
+    margin-left: 20%;
+    margin-top: -40px;
+    border: solid;
+    width: 25%;
+}
+#phonenumber {
+    margin-left: 30%;
+    margin-top: -40px;
+    border: solid;
+    width: 25%;
+}
+#extensionnumber {
+    margin-left: 50%;
+    margin-top: -40px;
+    border: solid;
+    width: 10%;
+}
+#faxnumber {
+    margin-left: 75%;
+    margin-top: -40px;
+    border: solid;
+    width: 25%;
+}

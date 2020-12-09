@@ -1,0 +1,30 @@
+﻿#UsrTitle{
+    text-align:center;
+}
+
+.FixedHeader {
+    position: absolute;
+    font-weight: bold;
+}
+ 
+#FirstN{
+    margin-left: 80px;
+}
+#LastN{
+    margin-left: 80px;
+}
+#Deparment{
+    margin-left: 80px;
+}
+#email{
+    margin-left: 80px;
+}
+#Phone{
+margin-left: 80px;
+}
+#Ext{
+    margin-left: 80px;
+}
+#Fax{
+    margin-left: 80px;
+}

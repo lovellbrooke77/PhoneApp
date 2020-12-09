@@ -1,0 +1,152 @@
+﻿/*Start register Style*/
+.pagecontainer {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    font-family: sans-serif;
+    width: 100%;
+    margin: auto;
+    padding: 20px;
+    height: 100%;
+}﻿ /*Start Global Style*/
+ .register{
+     width:50%;
+ }
+
+/*Start register Style*/
+.register {
+    background-color: #fafafa;
+    height: 100%;
+    border-radius: 10px 0 0 10px;
+    text-align: center;
+    padding-top: 100px;
+}
+
+    .register h1 {
+        margin-bottom: 40px;
+        font-size: 2.5em;
+    }
+/* Put Id in below once it is configured*/
+.registeruser{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 30px;
+    border: none;
+    background-color: #eeeeef;
+}
+.Registerpass {
+    width: 100%;
+    margin-left: 0px;
+    padding: 10px;
+    margin-bottom: 30px;
+    border: none;
+    background-color: #eeeeef;
+}
+.txtconfirmpassword {
+    width: 100%;
+    margin-left: 0px;
+    padding: 10px;
+    margin-bottom: 30px;
+    border: none;
+    background-color: #eeeeef;
+}
+#fname {
+    width: 100%;
+    margin-left: 0px;
+    padding: 10px;
+    margin-bottom: 30px;
+    border: none;
+    background-color: #eeeeef;
+}
+#lname {
+    width: 100%;
+    margin-left: 0px;
+    padding: 10px;
+    margin-bottom: 30px;
+    border: none;
+    background-color: #eeeeef;
+}
+
+.login span {
+    float: left
+}
+
+.login a {
+    float: right;
+    text-decoration: none;
+    color: #000;
+    transition: 0.3s all ease-in-out;
+}
+
+    .login a:hover {
+        color: #0F52BA;
+        font-weight: bold;
+    }
+
+.registerbutton {
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    background-color: #0F52BA;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s all ease-in-out;
+}
+
+    .registerbutton:hover {
+        width: 99%;
+        font-size: 22px;
+        border-radius: 5px;
+    }
+
+.register hr {
+    width: 30%;
+    display: inline-block
+}
+
+.register p {
+    display: inline-block;
+    margin: 0px 10px 30px;
+}
+
+.register ul {
+    list-style: none;
+    margin-bottom: 40px;
+}
+
+    .register ul li {
+        display: inline-block;
+        margin-right: 30px;
+        cursor: pointer;
+    }
+
+        .register ul li:hover {
+            opacity: 0.6
+        }
+
+        .register ul li:last-child {
+            margin-right: 0
+        }
+
+.clearfix {
+    width: 100%;
+    margin-top: 20px;
+    padding: 5px;
+    border: none;
+    background-color: #0F52BA;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s all ease-in-out;
+}
+
+    .clearfix:hover {
+        width: 99%;
+        font-size: 22px;
+        border-radius: 5px;
+    }

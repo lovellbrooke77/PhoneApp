@@ -1,0 +1,30 @@
+﻿#PhoneTitle{
+    text-align:center;
+}
+#PhoneT {
+    width: 100%;
+}
+#department {
+    margin-top:5%;
+    border: solid;
+}
+#FirstN {
+    margin-left: 16%;
+    margin-top: -40px;
+    border: solid;
+}
+#LastN {
+    margin-left: 30%;
+    margin-top: -40px;
+    border: solid;
+}
+#Phonenumber {
+    margin-left: 44%;
+    margin-top: -40px;
+    border: solid;
+}
+#extensionnumber {
+    margin-left: 63%;
+    margin-top: -40px;
+    border: solid;
+}
