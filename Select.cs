@@ -1,4 +1,4 @@
-﻿namespace PhoneApp
+﻿namespace PhoneDirectory
 {
     internal class Select
     {

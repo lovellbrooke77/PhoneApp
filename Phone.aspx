@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Phone.aspx.cs" Inherits="PhoneApp.Phone" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Phone.aspx.cs" Inherits="PhoneDirectory.Phone" %>
 
 <!DOCTYPE html>
 <link rel="stylesheet" href="Css/Phone.css">
@@ -11,8 +11,9 @@
 
 <asp:GridView ID="PhoneSearch" runat="server" HeaderStyle-BackColor="Blue" AutoGenerateColumns="false"
           AllowPaging="true" OnPageIndexChanging="PhoneSearch_PageIndexChanging" AlternatingRowStyle-BackColor="WhiteSmoke">   
-           
-<%--#0F52BA--%><%--#e5e4e2--%>
+
+<%-- gridview will show information from the database that a user searches on
+    depending on the search the view will be different--%>
 <Columns>
    
    <asp:BoundField DataField="PhoneNumber" HeaderText="Phone Number" SortExpression="Phone Number"

@@ -4,7 +4,7 @@ using System.Data;
 using System.Data.OleDb;
 
 
-namespace PhoneApp
+namespace PhoneDirectory
 {
     public partial class Phonebook : System.Web.UI.Page
     {

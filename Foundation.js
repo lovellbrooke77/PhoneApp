@@ -25,6 +25,9 @@
 function cancel() {
     document.getElementById("form1").reset();
 }
+function RegisterCancel() {
+    document.getElementById("form1").reset();
+}
 
 //Changes the color of a specific area that is selected.
 function ChangeColor() {
@@ -32,7 +35,9 @@ function ChangeColor() {
     //This sets the background for the register id's to the color of #0F52BA on the login and registration pages
     document.getElementById('register').style.backgroundColor = "#0F52BA";
 
-    //This sets the background for the pageContainer's id's to the color of gainsboro on the login and registration pages
+    //Sets the background for the body id's to the color of #0F52BA on the login and registration pages
     document.getElementById('pageContainer').style.backgroundColor = "gainsboro";
-
+}
+function ChangeColor1() {
+    document.getElementById('pageContainer').style.backgroundColor = "gainsboro";
 }

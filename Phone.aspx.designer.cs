@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace PhoneApp
+namespace PhoneDirectory
 {
 
 

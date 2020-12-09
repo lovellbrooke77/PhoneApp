@@ -3,7 +3,7 @@ using System.Web.UI.WebControls;
 using System.Data;
 using System.Data.OleDb;
 
-namespace PhoneApp
+namespace PhoneDirectory
 {
     public partial class Phone : System.Web.UI.Page
     {

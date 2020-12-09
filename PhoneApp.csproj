@@ -221,6 +221,7 @@
     <Content Include="NotUsedScript\loginReg.js" />
     <Content Include="Phone.aspx" />
     <Content Include="NotUsedScript\User.aspx" />
+    <Content Include="Search1.aspx" />
     <Content Include="Web.config" />
     <Content Include="Search.aspx" />
   </ItemGroup>
@@ -282,6 +283,13 @@
     </Compile>
     <Compile Include="Request\Form.cs" />
     <Compile Include="Response\Redirect.cs" />
+    <Compile Include="Search1.aspx.cs">
+      <DependentUpon>Search1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Search1.aspx.designer.cs">
+      <DependentUpon>Search1.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Select.cs" />
     <Compile Include="NotUsedScript\User.aspx.cs">
       <DependentUpon>User.aspx</DependentUpon>

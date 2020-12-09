@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Phonebook.aspx.cs" Inherits="PhoneApp.Phonebook" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Phonebook.aspx.cs" Inherits="PhoneDirectory.Phonebook" %>
 
 <!DOCTYPE html>
 

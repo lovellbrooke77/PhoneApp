@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Data.OleDb;
-namespace PhoneApp
+
+namespace PhoneDirectory
 {
     public partial class Home : System.Web.UI.Page
     {
@@ -19,39 +20,13 @@ namespace PhoneApp
         }
         protected void Page_Load(object sender, EventArgs e)
         {
-          //  if (!IsPostBack)
-               // fname.Focus();
+        
         }
             protected void btnUser_Click(object sender, EventArgs e)
             {
-            //string sql;
-            //OleDbConnection con = new OleDbConnection();
-            //// establish connection  
-            //con.ConnectionString = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" + Server.MapPath("Phonebook.mdb");
-            //con.Open(); // connection open  
-            //            // sql query  
             
-            //sql = "select FirstName, LastName, StatusId from [user] where [FirstName]='" 
-            //    + fname.Text + "' and [LastName]='" + lname.Text + "'";
-            //OleDbCommand cmd = new OleDbCommand(sql, con);
-            //cmd.ExecuteScalar();// cast into integer and ExecuteScalar() get single value from database.   
-            //OleDbDataReader reader;
-            //reader = cmd.ExecuteReader();
-
-            //while (reader.Read())
-            //{
-            //    if (reader.HasRows)
-            //    {
-                    //Response.Redirect("~/User.aspx?f_name="+fname.Text+"&l_name="+lname.Text);
-                    Response.Redirect("~/Phonebook.aspx?btn=user&f_name=" +  fname.Text + "&l_name=" + lname.Text);
-            //    }
-            //    else
-            //    {
-
-            //        lblmessage1.Text = "First or Last Name not Found. Try again.";
-            //        con.Close(); // connection close 
-            //    }
-            //}
+                    Response.Redirect("~/Phonebook.aspx?btn=user&f_name=" + TextBox_fname.Text + "&l_name=" + lname.Text);
+         
         }
         protected void PhoExtbtn_Click(object sender, EventArgs e)
         {
@@ -66,7 +41,7 @@ namespace PhoneApp
                 "department.DepartmentID, phonenumber.PhoneID, email.EmailID FROM [phonenumber],[user],[email],[department]" +
                 "WHERE [user].UserID = [phonenumber].UserID AND [user].UserID= [email].UserID AND [user].UserID = [department].UserID";
 
-                //"select PhoneNumber, ExtensionNumber from [phonenumber]";
+                
             OleDbCommand cmd = new OleDbCommand(sql, con);
             cmd.ExecuteScalar();// cast into integer and ExecuteScalar() get single value from database.   
             OleDbDataReader reader;
@@ -82,12 +57,13 @@ namespace PhoneApp
                     E_name = ExtNumber.Text;
                     P_name = PhoneNum.Text;
 
-                    //Response.Redirect("~/Phone.aspx?P_name=" + P_name+"& E_name = "+E_name);
+                    
                     Response.Redirect("~/Phonebook.aspx?btn=phone&P_name=" + P_name + "&E_name=" + E_name);
                 }
                 else
                 {
                     con.Close(); // connection close  
+                    //if a phone number or extension number is not in the database it will make the user try again
                     lblmessage2.Text = "Phone number or Extension number not Found. Try again.";
                 }
             }
@@ -115,12 +91,13 @@ namespace PhoneApp
                     
                     F_name = FaxNum.Text;
 
-                    //Response.Redirect("~/Fax.aspx?F_name=" + F_name);
+                    
                     Response.Redirect("~/Phonebook.aspx?btn=fax&F_name=" + F_name);
                 }
                 else
                 {
                     con.Close(); // connection close  
+                    // if a fax number is not in the database it will make the user try again
                     lblmessage3.Text = "Fax number not Found. Try again.";
                 }
             }
@@ -149,12 +126,13 @@ namespace PhoneApp
 
                     Department_name = DD_Department.SelectedValue;
 
-                    //Response.Redirect("~/Department.aspx?Department_name=" +Department_name); 
+                    
                     Response.Redirect("~/Phonebook.aspx?btn=department&Department_name=" + Department_name);
                 }
                 else
                 {
                     con.Close(); // connection close  
+                    //if a department is not in the database it will make the user try again
                     lblmessage4.Text = "Department not Found. Try again.";
                 }
             }
