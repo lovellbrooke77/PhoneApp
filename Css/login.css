@@ -4,31 +4,25 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    font-family: sans-serif;
-    width: 80%;
-    margin: auto;
-    padding: 20px;
     height: 100%;
+    width: 100%;
+    margin: auto;
 }
-.login, .register {
-    width: 50%
+.login, .register{
+    width:50%;
 }
-
 /*Start Login Style*/
 .login {
     background-color: #fafafa;
-    height: 88%;
     border-radius: 10px 0 0 10px;
     text-align: center;
-    padding-top: 100px;
+    height:100%;
+    padding-top: 0px;
 }
-
     .login h1 {
         margin-bottom: 40px;
         font-size: 2.5em;
     }
-
 .logincredentials {
     width: 100%;
     padding: 10px;
@@ -116,13 +110,16 @@
 /*Start Register Style*/
 .registerContainer {
     float: left;
-    height: 67%;
+    height: 70%;
     color: #fff;
     border-radius: 0 10px 10px 0;
     text-align: center;
     padding: 100px 0;
+    background-color: #00578a;
 }
-
+#register1{
+    background-color: #0F52BA;
+}
     .register h2{
         margin: 30px 0;
         font-size: 50px;
